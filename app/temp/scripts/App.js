@@ -11115,6 +11115,7 @@ var _Modal2 = _interopRequireDefault(_Modal);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var mobileMenu = new _MobileMenu2.default();
 new _RevealOnScroll2.default((0, _jquery2.default)(".feature-item"), "85%");
 new _RevealOnScroll2.default((0, _jquery2.default)(".testimonial"), "60%");
 var stickyHeader = new _StickyHeader2.default();
@@ -11159,7 +11160,6 @@ var MobileMenu = function () {
 	}, {
 		key: "toggleTheMenu",
 		value: function toggleTheMenu() {
-
 			this.menuContent.toggleClass("site-header__menu-content--is-visible");
 			this.siteHeader.toggleClass("site-header--is-expanded");
 			this.menuIcon.toggleClass("site-header__menu-icon--close-x");
